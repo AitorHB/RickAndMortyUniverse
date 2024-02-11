@@ -1,0 +1,46 @@
+<mat-card>
+
+    <mat-card-header>
+
+        <!-- <img mat-card-avatar loading="lazy" [src]="iconCard" alt="{{name}}" /> -->
+
+        <mat-card-title>
+            {{ name }}
+        </mat-card-title>
+
+        <!-- <mat-card-subtitle>
+      <img loading="lazy" [src]="rarity" alt="{{ rarity }}" class="iconStarRarity" />
+    </mat-card-subtitle> -->
+    </mat-card-header>
+
+    <img mat-card-image loading="eager" [src]="image" alt="{{ name }}" class="imageCard" />
+
+    <mat-card-content>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Name:</td>
+                    <td>{{name}}</td>
+                </tr>
+                <tr>
+                    <td>Status:</td>
+                    <td>{{status}}</td>
+                </tr>
+                <tr>
+                    <td>Specie:</td>
+                    <td>{{species}}</td>
+                </tr>
+                <tr>
+                    <td>Type:</td>
+                    <td>{{type}}</td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>{{gender}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </mat-card-content>
+
+</mat-card>

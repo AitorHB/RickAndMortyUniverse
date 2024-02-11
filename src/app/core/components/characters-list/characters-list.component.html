@@ -1,0 +1,27 @@
+<form class="form">
+
+  <mat-form-field class="search-field">
+    <mat-label>Search character</mat-label>
+    <input matInput type="text" name="inputValue" [(ngModel)]="inputValue" (keyup)="onSearch(inputValue)">
+    @if (inputValue) {
+    <button matSuffix mat-icon-button aria-label="Clear" (click)="inputValue=''">
+      <mat-icon>close</mat-icon>
+    </button>
+    }
+  </mat-form-field>
+
+</form>
+
+<div class="containerCharacterList">
+  @if (characterListLoaded) {
+  <div class="characterList">
+    @if (characterList) {
+    @for (character of characterList; track $index ) {
+    <app-character-card [character]="character"></app-character-card>
+    }
+    }
+  </div>
+  }@else {
+  <mat-spinner></mat-spinner>
+  }
+</div>

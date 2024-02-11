@@ -1,6 +1,6 @@
 export const API = {
   BASE: 'https://rickandmortyapi.com/api/',
-  CHARACTERS: 'https://rickandmortyapi.com/api/character'
+  CHARACTERS: 'https://rickandmortyapi.com/api/character/'
 };
 
 export const RESOURCES = {
